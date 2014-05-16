@@ -79,7 +79,9 @@ type Container struct {
 	Command    string
 	Created    int
 	Status     string
-	Ports      []Port
+	//Ports      []Port
+	// Changing Ports to a string because things are breaking on the API version I'm using.
+	Ports      string
 	SizeRw     int
 	SizeRootFs int
 }
